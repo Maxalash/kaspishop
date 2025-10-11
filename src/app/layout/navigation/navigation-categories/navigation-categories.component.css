@@ -1,0 +1,25 @@
+.navigation-categories {
+  display: flex;
+  width: 960px;
+  margin-inline: auto;
+  border-left: 1px solid var(--line-color);
+}
+
+.navigation-category {
+  padding: 10px 15px;
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  border-right: 1px solid var(--line-color);
+  cursor: pointer;
+  align-content: center;
+  border-top: 2px solid transparent;
+}
+
+.navigation-category:hover {
+  border-top: 2px solid var(--text-primary);
+
+}
+
+.navigation-category:hover ~ .navigation-category  {
+  background-color: var(--bg-white);
+}
