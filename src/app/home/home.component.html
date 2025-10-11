@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div class="home-container">
+  <div class="home-slider">
+    <div class="home categories">
+      <app-category-card *ngFor="let category of categories" [category]="category"></app-category-card>
+    </div>
+  </div>
+</div>
