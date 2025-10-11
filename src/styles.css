@@ -7,13 +7,20 @@ everywhere styling needed. */
   --bg-white: #fbfafa;
   --bg: #efefee;
 
+  --line-color: #dcdcdc;
+
   --text: #262626;
+  --text-primary: #0089d0;
   --text-secondary: #abaaab;
 
-  --text-size: 14px;
-  --text-size-lg: 16px;
-  --text-size-sm: 12px;
   --text-size-xl: 20px;
+  --text-size-lg: 16px;
+  --text-size: 14px;
+  --text-size-sm: 12px;
+
+  --text-bold: 500;
+  --text-regular: 300;
+  --text-light: 200;
 
   --bright-blue: oklch(51.01% 0.274 263.83);
   --electric-violet: oklch(53.18% 0.28 296.97);
@@ -49,3 +56,8 @@ everywhere styling needed. */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

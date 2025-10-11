@@ -1,17 +1,4 @@
 <section class="navigation">
-  <div class="form">
-    <div class="search-bar">
-      <a href="/">Магазин</a>
-      <input type="text" placeholder="Поиск по товарам"/>
-      <img src="/src/assets/search.svg" alt="Search icon"/> 
-    </div>
-    <div class="location">
-      <img src="/src/assets/location.svg" alt="Location icon"/>
-      <span>г. Алматы</span>
-      <img src="/src/assets/arrow-down.svg" alt="Arrow down icon"/>
-    </div>
-  </div>
-  <div class="categories" *ngFor="let category of categories">
-    <span>{{ category.name }}</span>
-  </div>
+  <app-navigation-search></app-navigation-search>
+  <app-navigation-categories></app-navigation-categories>
 </section>

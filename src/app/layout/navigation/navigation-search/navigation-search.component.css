@@ -1,0 +1,75 @@
+.navigation-form {
+  width: 960px;
+  margin-inline: auto;
+  display: flex;
+  gap: 40px;
+  padding-block: 18px 14px;
+}
+
+.navigation-search {
+  width:70%;
+  height: 35px;
+  position: relative;
+  display: flex;
+}
+/* Navigation to home page button styles */
+.navigation-search button:nth-child(1) {
+  width: 100px;
+  background: var(--bg-white);
+  border: 1px solid var(--line-color);
+  border-radius: 2px 0 0 2px;
+  border-right: none;
+  color: var(--text-primary);
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: var(--text-lg);
+  font-weight: var(--text-bold);
+}
+.navigation-search button:focus, 
+.navigation-search button:active {
+  border: 1px solid var(--text-secondary);
+  border-radius: 2px 0 0 2px;
+  border-right: none;
+}
+
+/* Navigation search box styles */
+.navigation-search input {
+  width: 100%;
+  border: 1px solid var(--line-color);
+  padding-inline: 10px;
+}
+
+.navigation-search input:focus {
+  border: 1px solid var(--text-secondary);
+  outline: none;
+}
+/* Navigation search icon styles */
+.navigation-search button:nth-child(3) {
+  width: 60px;
+  background: var(--text-primary);
+  border: none;
+  border-radius: 0 2px 2px 0;
+  border-left: none;
+  color: var(--bg-white);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+.navigation-search button:nth-child(3):active {
+  padding-top: 8px;
+}
+
+/* Location styles */
+
+.location button {
+  display: block;
+  border: none;
+  border-bottom: 1px dashed var(--text-primary);
+  background: none;
+  color: var(--text-primary);
+  padding: 0;
+}
