@@ -1,4 +1,20 @@
-:host {
+/* Main idea is to define all colors and text sizes here and use them using var() 
+everywhere styling needed. */
+
+:root {
+  --white: #fefffe;
+
+  --bg-white: #fbfafa;
+  --bg: #efefee;
+
+  --text: #262626;
+  --text-secondary: #abaaab;
+
+  --text-size: 14px;
+  --text-size-lg: 16px;
+  --text-size-sm: 12px;
+  --text-size-xl: 20px;
+
   --bright-blue: oklch(51.01% 0.274 263.83);
   --electric-violet: oklch(53.18% 0.28 296.97);
   --french-violet: oklch(47.66% 0.246 305.88);
@@ -32,11 +48,4 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-main * {
-  box-sizing: border-box;
-}
-
-*::before, *::after {
-  box-sizing: inherit;
 }

@@ -12,14 +12,16 @@
   <hr />
   <div class="footer-bottom">
     <div>
-      <div> © 2012-<span>2025, ТОО «Kaspi Магазин»</span></div>
+      <div> © 2012-<span>2025, ТОО «Kaspi Магазин»</span></div><br/>
       <div>Все товарные знаки, размещённые на сайте, являются товарными знаками правообладателя и используются на сайте исключительно в информационных целях</div>
-      <a href="https://www.kaspibank.kz/?s=kaspi">Корпоративный сайт</a>
+      <br/><a style="color: var(--text-secondary); text-decoration: none;" href="https://www.kaspibank.kz/?s=kaspi">Корпоративный сайт</a>
     </div>
-    <a *ngFor="let social of socials" href="{{ social.imageUrl }}" target="_blank" >
-      <span style="width:24px;height:24px;">
-        <img src="{{ social.imageUrl }}" alt="{{ social.name }}" />
-      </span>
-    </a>
+    <div id="footer-bottom-socials">
+      <a *ngFor="let social of socials" href="{{ social.imageUrl }}" target="_blank" >
+        <span>
+          <img src="{{ social.imageUrl }}" alt="{{ social.name }}" />
+        </span>
+      </a>
+    </div>
   </div>
 </div>

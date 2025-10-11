@@ -1,0 +1,26 @@
+.footer-container {
+  width: 960px;
+  margin-inline: auto;
+}
+
+.footer-links {
+  padding-block: 40px;
+  display: flex;
+
+}
+
+.footer-bottom {
+  padding-block:20px;
+  display: flex;
+  
+}
+#footer-bottom-socials {
+  margin-left: 50px;
+  gap: 12px;
+  display: flex;
+}
+#footer-bottom-socials span {
+  width: 24px;
+  height: 24px;
+  color: var(--text-secondary);
+}

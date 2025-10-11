@@ -1,0 +1,13 @@
+main {
+  background-color: var(--bg);
+  font-size: var(--text-size);
+  color: var(--text);
+}
+
+main * {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
