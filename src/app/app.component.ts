@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './layout/header/header.component';
-import { NavigationComponent } from './layout/navigation/navigation.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
+import { NavigationComponent } from './core/navigation/navigation.component';
+import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
 @Component({
