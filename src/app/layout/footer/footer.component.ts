@@ -1,14 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SocialLinksService, SocialLink } from './social-links.service';
+import { FooterLinksService, LinkColumn } from './footer-links.service';
 
-interface Link {
-  name: string;
-  url: string;
-}
-interface LinkColumn {
-  title: string;
-  links: Link[];
-}
 
 @Component({
   selector: 'app-footer',
@@ -18,27 +12,18 @@ interface LinkColumn {
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  linkColumns: LinkColumn[] = [
-    { title: 'Company', links: [
-        { name: 'About Us', url: '/about' },
-        { name: 'Careers', url: '/careers' },
-      ]
-    },
-  ];
+  linkColumns: LinkColumn[];
+  private readonly footerLinksService = inject(FooterLinksService);
 
-  socials: {imageUrl: string, link: string, name: string}[] = [
-    {name:'Instagram', imageUrl: 'assets/instagram.svg', link: 'https://www.instagram.com/kaspi.kz/' },
-    {name:'TikTok', imageUrl: 'assets/tiktok.svg', link: 'https://www.tiktok.com/@kaspi.kz' },
-    {name:'YouTube', imageUrl: 'assets/youtube.svg', link: 'https://www.youtube.com/c/Kaspikz' },
-    {name:'Telegram', imageUrl: 'assets/telegram.svg', link: 'https://t.me/kaspikz' },
-    {name:'Facebook', imageUrl: 'assets/facebook.svg', link: 'https://www.facebook.com/Kaspi.kz/' },
-    {name:'Twitter', imageUrl: 'assets/twitter.svg', link: 'https://twitter.com/Kaspi_kz' },
-    {name:'VK', imageUrl: 'assets/vk.svg', link: 'https://vk.com/kaspikz' },
-    {name:'OK', imageUrl: 'assets/ok.svg', link: 'https://www.ok.ru/kaspi.kz' },
-    {name:'LinkedIn', imageUrl: 'assets/linkedin.svg', link: 'https://www.linkedin.com/company/kaspi-kz/' },
-  ];
+  socials: SocialLink[];
+  private socialLinksService: SocialLinksService = inject(SocialLinksService);
+  constructor() {
+    this.socials = this.socialLinksService.getSocialLinks();
+    this.linkColumns = this.footerLinksService.getLinkColumns();
+  }
+
+  
 
 
 
 }
-
