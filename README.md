@@ -1,5 +1,22 @@
 # Kaspishop
 
+This is the analogue for the Kaspi Shop website by Kaspi. Created for Angular practice and example for other. Documentation is provided. Feel free to to go through them to understand the code.
+
+## File structure
+
+For the project structure I used Module based approach for its simplicity and main idea of short and simple code structures.
+
+/src  
+ |-- /app  
+      |-- /[core](app/core/README.md) # Core services and singleton utilities like auth, logging  
+      |-- /[home](app/home/README.md) # Home page components  
+      |-- /[shared](app/shared/README.md) # Shared components, pipes, directives  
+      |-- /app.component.ts # Root component  
+      |-- /app.routes.ts # Root routing routing  
+  
+ |-- /assets # Project media and other assets  
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
 ## Development server
