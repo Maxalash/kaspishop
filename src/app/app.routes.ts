@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MarketComponent } from './market/market.component';
-import { ProductComponent } from './market/products/product/product.component';
+import { DetailsComponent } from './details/details.component';
 
 export const routes: Routes = [
   {
@@ -16,7 +16,7 @@ export const routes: Routes = [
   },
   {
     path: 'd/:productId',
-    component: ProductComponent,
+    component: DetailsComponent,
     title: 'Product Details'
   }
 ];
