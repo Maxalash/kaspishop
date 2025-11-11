@@ -1,8 +1,18 @@
-.category-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
+.category_card {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 260px;
+  border-radius: 20px;
+  background-color: var(--bg-white);
+  padding: 20px;
   text-align: center;
-  transition: box-shadow 0.3s ease;
-  background-color: #fff;
+}
+
+.category_card_img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
 }
