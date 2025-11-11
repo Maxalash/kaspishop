@@ -1,8 +1,8 @@
 <div class="navigation-form">
   <div class="navigation-search">
     <a href="/"><button>Магазин</button></a>
-    <input type="text" placeholder="Поиск по товарам"/>
-    <button><mat-icon>search</mat-icon></button>
+    <input #navigationSearch type="text" placeholder="Поиск по товарам"/>
+    <button (click)="requestProducts(navigationSearch.value)"><mat-icon>search</mat-icon></button>
   </div>
   <div class="location">
     Мой город:
