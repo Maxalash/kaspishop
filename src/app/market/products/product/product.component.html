@@ -1,0 +1,7 @@
+<div class="market_product">
+<img [src]="product.imageUrl" [alt]="product.name" />
+<div class="market_product_info">
+  <a routerLink="/d/{{product.id}}">{{ product.name }}</a>
+  <span class="market_product_price">\${{ product.price }}</span>
+</div>
+</div>

@@ -1,0 +1,6 @@
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  border: 1px solid var(--line-color);
+}
