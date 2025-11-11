@@ -1,0 +1,18 @@
+.home_container {
+  width:960px;
+  margin:0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.home_slider {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+.home_categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

@@ -1,6 +1,8 @@
-<div class="home-container">
-  <div class="home-slider">
-    <div class="home categories">
+<div class="home_container">
+  <div class="home_slider">
+    <button mat-button class="slide_btn prev_btn">&#10094;</button>
+    <button mat-button class="slide_btn next_btn">&#10095;</button>
+    <div class="home_categories">
       <app-category-card *ngFor="let category of categories" [category]="category"></app-category-card>
     </div>
   </div>
