@@ -29,4 +29,7 @@ export class LoginComponent {
 
 }
 
+  logout() {
+    this.loginService.authService.logout();
+  }
 }
