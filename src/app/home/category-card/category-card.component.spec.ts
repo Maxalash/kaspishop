@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CategoryCardComponent } from './category-card.component';
+import { provideRouter } from '@angular/router';
 
 describe('CategoryCardComponent', () => {
   let component: CategoryCardComponent;
@@ -8,7 +9,8 @@ describe('CategoryCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CategoryCardComponent]
+      imports: [CategoryCardComponent],
+      providers: [provideRouter([])]
     })
     .compileComponents();
     
